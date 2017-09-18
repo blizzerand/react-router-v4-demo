@@ -7,13 +7,13 @@ React router is the de-facto routing library for React.This repo consists of sev
 
 ## Install instructions
 
-Each demo has its own directory and a package.json file. Run the following command to install the node modules:
+Each demo has its own directory and a `package.json` file. Run the following command to install the node modules:
 ```
 npm install
 ```
 To serve the demo on a browser, run 
 ```
-npm serve
+npm start
 ```
 
 
