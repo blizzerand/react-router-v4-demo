@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Redirect, Link,Router, Route,Switch } from 'react-router-dom';
+import { Redirect, Link, Route,Switch } from 'react-router-dom';
 import Category from './Category';
 import Products from './Products';
 import  Login  from './Login';

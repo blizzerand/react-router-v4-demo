@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link,Router, Route,Switch } from 'react-router-dom';
+import { Link,Route,Switch } from 'react-router-dom';
 import Category from './Category';
 import Products from './Products';
 
@@ -7,9 +7,7 @@ import Products from './Products';
 class App extends Component {
   render() {
 
-    const styles = { 
-
-    }
+  
     return (
       <div>
         <nav className="navbar navbar-light">

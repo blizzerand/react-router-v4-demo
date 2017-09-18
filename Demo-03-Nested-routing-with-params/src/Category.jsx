@@ -1,6 +1,6 @@
 
-import React, { Component } from 'react';
-import { Link,Router, Route,Switch } from 'react-router-dom';
+import React from 'react';
+import { Link, Route } from 'react-router-dom';
 
 const Category = ({ match }) => {
 return( <div>   <ul>

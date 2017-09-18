@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Redirect, Link,Router, Route,Switch } from 'react-router-dom';
+import React from 'react';
+import { Redirect } from 'react-router-dom';
 import {fakeAuth } from './App';
 
 class Login extends React.Component {

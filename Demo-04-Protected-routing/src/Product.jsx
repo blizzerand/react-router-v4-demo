@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { Link,Router, Route,Switch } from 'react-router-dom';
+import React from 'react';
+
 
 const Product = ({match,data}) => {
-  var product= data.find(p => p.id == match.params.productId);
+  var product= data.find(p => p.id === Number(match.params.productId));
   var productData;
 
   if(product)

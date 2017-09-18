@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Link,Router, Route,Switch } from 'react-router-dom';
+import React from 'react';
+import { Link, Route } from 'react-router-dom';
 import  Product  from './Product';
 
 const Products = ({ match }) => {
@@ -35,7 +35,7 @@ const Products = ({ match }) => {
 ];
   var linkList = productsData.map( (product) => {
     return(
-      <li>
+      <li key={product.id}>
         <Link to={`${match.url}/${product.id}`}>
           {product.name}
         </Link>
