@@ -1,6 +1,6 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-import {fakeAuth } from './App';
+
 
 class Login extends React.Component {
 
@@ -40,6 +40,17 @@ class Login extends React.Component {
   }
 
 
+}
+
+/* A fake authentication function */
+
+export const fakeAuth = {
+
+  isAuthenticated: false,
+  authenticate(cb) {
+    this.isAuthenticated = true
+     setTimeout(cb, 100)
+  },
 }
 
 export default Login

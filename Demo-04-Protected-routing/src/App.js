@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Redirect, Link, Route,Switch } from 'react-router-dom';
 import Category from './Category';
 import Products from './Products';
-import  Login  from './Login';
+import  Login, { fakeAuth }  from './Login';
 
 
 class App extends Component {
@@ -56,15 +56,6 @@ const Admin = ({ match }) => {
 
 
 }
-/* A fake authentication function */
 
-export const fakeAuth = {
-
-  isAuthenticated: false,
-  authenticate(cb) {
-    this.isAuthenticated = true
-     setTimeout(cb, 100)
-  },
-}
 
 export default  App;
