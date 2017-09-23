@@ -4,11 +4,17 @@ import {fakeAuth } from './App';
 
 class Login extends React.Component {
 
-  state = {
-    redirectToReferrer: false
+  constructor() {
+
+    super();
+
+    this.state = {
+      redirectToReferrer: false
+    }
+    this.login = this.login.bind(this);
   }
 
-  login = () => {
+  login() {
     
     fakeAuth.authenticate(() => {
       this.setState({ redirectToReferrer: true })
